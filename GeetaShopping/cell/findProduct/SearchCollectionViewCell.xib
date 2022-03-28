@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SearchCollectionViewCell" customModule="GeetaShopping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="634" height="434"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="634" height="434"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVT-CA-elW">
+                        <rect key="frame" x="0.0" y="0.0" width="634" height="230"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoodie 1" translatesAutoresizingMaskIntoConstraints="NO" id="Bfd-lY-qa3">
+                                <rect key="frame" x="271" y="49.5" width="92" height="131"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-rT-QH6">
+                                <rect key="frame" x="590" y="20" width="24" height="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="img15"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.95686274510000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bfd-lY-qa3" firstAttribute="centerX" secondItem="wVT-CA-elW" secondAttribute="centerX" id="83Y-uQ-hHY"/>
+                            <constraint firstAttribute="trailing" secondItem="3qG-rT-QH6" secondAttribute="trailing" constant="20" id="AN1-zU-Iad"/>
+                            <constraint firstItem="Bfd-lY-qa3" firstAttribute="centerY" secondItem="wVT-CA-elW" secondAttribute="centerY" id="FZl-kK-AJU"/>
+                            <constraint firstItem="3qG-rT-QH6" firstAttribute="top" secondItem="wVT-CA-elW" secondAttribute="top" constant="20" id="kJt-6T-Ob1"/>
+                            <constraint firstAttribute="height" constant="230" id="s4J-2l-QGg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="rc1-n6-Ygy">
+                        <rect key="frame" x="10" y="240" width="614" height="42.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pink Hoodie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRg-U4-XB4">
+                                <rect key="frame" x="260.5" y="0.0" width="93" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$40.00 USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkg-39-kbO">
+                                <rect key="frame" x="267.5" y="25.5" width="79.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wVT-CA-elW" secondAttribute="trailing" id="1kn-aw-efr"/>
+                <constraint firstItem="rc1-n6-Ygy" firstAttribute="top" secondItem="wVT-CA-elW" secondAttribute="bottom" constant="10" id="GzJ-9E-PJx"/>
+                <constraint firstItem="rc1-n6-Ygy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="WdI-KA-UTr"/>
+                <constraint firstItem="wVT-CA-elW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WxJ-nV-LDM"/>
+                <constraint firstItem="wVT-CA-elW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cGW-mI-WlG"/>
+                <constraint firstAttribute="trailing" secondItem="rc1-n6-Ygy" secondAttribute="trailing" constant="10" id="fWm-wV-dfs"/>
+            </constraints>
+            <size key="customSize" width="634" height="434"/>
+            <point key="canvasLocation" x="560.86956521739137" y="262.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hoodie 1" width="92" height="131"/>
+        <image name="img15" width="24" height="24"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

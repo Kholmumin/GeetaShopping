@@ -1,0 +1,20 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.9)
+  - SideMenuSwift (2.0.9)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SideMenuSwift
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - SideMenuSwift
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  SideMenuSwift: 39f1922e225da4aaa8b16591037a929defe960c9
+
+PODFILE CHECKSUM: 7f66496566a8c7903db2a3000f7c770c9fc6e610
+
+COCOAPODS: 1.8.4

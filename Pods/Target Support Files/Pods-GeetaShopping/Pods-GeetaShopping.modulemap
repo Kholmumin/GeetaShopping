@@ -1,0 +1,6 @@
+framework module Pods_GeetaShopping {
+  umbrella header "Pods-GeetaShopping-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindProductViewController" customModule="GeetaShopping" customModuleProvider="target">
+            <connections>
+                <outlet property="searchCollection" destination="uzK-DY-iz9" id="mCn-qE-HOu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-sV-0hb">
+                    <rect key="frame" x="30" y="54" width="354" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qfv-zf-h6D">
+                            <rect key="frame" x="17" y="15.5" width="20.5" height="18.5"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Hoodies" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgv-RE-Jo2">
+                            <rect key="frame" x="52.5" y="0.0" width="290" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="290" id="NZa-av-3Wh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Zgv-RE-Jo2" firstAttribute="top" secondItem="wdQ-sV-0hb" secondAttribute="top" id="f5o-84-8pE"/>
+                        <constraint firstItem="Zgv-RE-Jo2" firstAttribute="leading" secondItem="qfv-zf-h6D" secondAttribute="trailing" constant="15" id="gq6-F7-zcT"/>
+                        <constraint firstItem="qfv-zf-h6D" firstAttribute="leading" secondItem="wdQ-sV-0hb" secondAttribute="leading" constant="17" id="kds-hD-zl0"/>
+                        <constraint firstAttribute="height" constant="50" id="maq-jU-3VY"/>
+                        <constraint firstAttribute="bottom" secondItem="Zgv-RE-Jo2" secondAttribute="bottom" id="rQw-Ka-te9"/>
+                        <constraint firstItem="qfv-zf-h6D" firstAttribute="centerY" secondItem="wdQ-sV-0hb" secondAttribute="centerY" id="weI-5h-en1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="139 Items found for “Hoodies”" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osv-mQ-VWh">
+                    <rect key="frame" x="109.5" y="119" width="195.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.63137254901960782" green="0.63137254901960782" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uzK-DY-iz9">
+                    <rect key="frame" x="15" y="151" width="384" height="745"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wgo-PE-U9T">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="osv-mQ-VWh" firstAttribute="top" secondItem="wdQ-sV-0hb" secondAttribute="bottom" constant="15" id="2y3-3L-eKO"/>
+                <constraint firstItem="wdQ-sV-0hb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="4bW-h5-5tN"/>
+                <constraint firstItem="uzK-DY-iz9" firstAttribute="top" secondItem="osv-mQ-VWh" secondAttribute="bottom" constant="15" id="J4F-qg-Wjk"/>
+                <constraint firstItem="osv-mQ-VWh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OQK-fl-Q2J"/>
+                <constraint firstAttribute="bottom" secondItem="uzK-DY-iz9" secondAttribute="bottom" id="VQy-P6-7On"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wdQ-sV-0hb" secondAttribute="trailing" constant="30" id="VXK-28-dM6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uzK-DY-iz9" secondAttribute="trailing" constant="15" id="hjK-W3-rbV"/>
+                <constraint firstItem="uzK-DY-iz9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="o7u-UT-xlX"/>
+                <constraint firstItem="wdQ-sV-0hb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="w3g-yW-Byn"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

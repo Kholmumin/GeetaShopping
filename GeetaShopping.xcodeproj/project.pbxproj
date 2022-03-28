@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		794515AE26EDDCCCA079061D /* Pods_GeetaShopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585CCFFE38865342C003BA19 /* Pods_GeetaShopping.framework */; };
+		EB3C2EBE279826930078F35E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C2EBD279826930078F35E /* AppDelegate.swift */; };
+		EB3C2EC7279826940078F35E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3C2EC6279826940078F35E /* Assets.xcassets */; };
+		EB3C2ECA279826940078F35E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3C2EC8279826940078F35E /* LaunchScreen.storyboard */; };
+		EB3C2ED4279826FB0078F35E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C2ED2279826FB0078F35E /* HomeViewController.swift */; };
+		EB3C2ED5279826FB0078F35E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB3C2ED3279826FB0078F35E /* HomeViewController.xib */; };
+		EB59285327B02B3C00136B3E /* MyCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59285127B02B3C00136B3E /* MyCartViewController.swift */; };
+		EB59285427B02B3C00136B3E /* MyCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB59285227B02B3C00136B3E /* MyCartViewController.xib */; };
+		EB59285827B02E9000136B3E /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59285627B02E9000136B3E /* CartTableViewCell.swift */; };
+		EB59285927B02E9000136B3E /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB59285727B02E9000136B3E /* CartTableViewCell.xib */; };
+		EB7AA9C227B0F1E3003DDB7D /* FindProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA9C027B0F1E3003DDB7D /* FindProductViewController.swift */; };
+		EB7AA9C327B0F1E3003DDB7D /* FindProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AA9C127B0F1E3003DDB7D /* FindProductViewController.xib */; };
+		EB7AA9C727B0F5A9003DDB7D /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA9C527B0F5A9003DDB7D /* SearchCollectionViewCell.swift */; };
+		EB7AA9C827B0F5A9003DDB7D /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AA9C627B0F5A9003DDB7D /* SearchCollectionViewCell.xib */; };
+		EB7AA9CC27B0F7F1003DDB7D /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA9CA27B0F7F1003DDB7D /* FavouriteViewController.swift */; };
+		EB7AA9CD27B0F7F1003DDB7D /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AA9CB27B0F7F1003DDB7D /* FavouriteViewController.xib */; };
+		EB7AA9D027B0F980003DDB7D /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA9CE27B0F980003DDB7D /* FavouriteTableViewCell.swift */; };
+		EB7AA9D127B0F980003DDB7D /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AA9CF27B0F980003DDB7D /* FavouriteTableViewCell.xib */; };
+		EB7AA9E527B10D04003DDB7D /* PlaceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA9E327B10D04003DDB7D /* PlaceOrderViewController.swift */; };
+		EB7AA9E627B10D04003DDB7D /* PlaceOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AA9E427B10D04003DDB7D /* PlaceOrderViewController.xib */; };
+		EB7AA9E927B10F4A003DDB7D /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA9E727B10F4A003DDB7D /* CreditViewController.swift */; };
+		EB7AA9EA27B10F4A003DDB7D /* CreditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AA9E827B10F4A003DDB7D /* CreditViewController.xib */; };
+		EB7AA9ED27B12394003DDB7D /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA9EB27B12394003DDB7D /* SuccessViewController.swift */; };
+		EB7AA9EE27B12394003DDB7D /* SuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AA9EC27B12394003DDB7D /* SuccessViewController.xib */; };
+		EB7AA9F127B12C8C003DDB7D /* ErrorScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA9EF27B12C8C003DDB7D /* ErrorScreenViewController.swift */; };
+		EB7AA9F227B12C8C003DDB7D /* ErrorScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AA9F027B12C8C003DDB7D /* ErrorScreenViewController.xib */; };
+		EB7AAF8927B3E43F00BA0F79 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AAF8727B3E43F00BA0F79 /* ProfileViewController.swift */; };
+		EB7AAF8A27B3E43F00BA0F79 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7AAF8827B3E43F00BA0F79 /* ProfileViewController.xib */; };
+		EB88680827A50885007A854E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88680627A50885007A854E /* CreateAccountViewController.swift */; };
+		EB88680927A50885007A854E /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB88680727A50885007A854E /* CreateAccountViewController.xib */; };
+		EB88680C27A51BE8007A854E /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88680A27A51BE8007A854E /* ShopViewController.swift */; };
+		EB88680D27A51BE8007A854E /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB88680B27A51BE8007A854E /* ShopViewController.xib */; };
+		EBA0D0AC27A91F7D003B80BC /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0D0AA27A91F7D003B80BC /* ShopCollectionViewCell.swift */; };
+		EBA0D0AD27A91F7D003B80BC /* ShopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA0D0AB27A91F7D003B80BC /* ShopCollectionViewCell.xib */; };
+		EBA0D0B027A9404F003B80BC /* ClothCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0D0AE27A9404F003B80BC /* ClothCollectionViewCell.swift */; };
+		EBA0D0B127A94050003B80BC /* ClothCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA0D0AF27A9404F003B80BC /* ClothCollectionViewCell.xib */; };
+		EBCF1F84279856780056ED11 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF1F82279856780056ED11 /* IntroViewController.swift */; };
+		EBCF1F85279856780056ED11 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF1F83279856780056ED11 /* IntroViewController.xib */; };
+		EBCF1F8827986FCC0056ED11 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF1F8627986FCC0056ED11 /* LogInViewController.swift */; };
+		EBCF1F8927986FCC0056ED11 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCF1F8727986FCC0056ED11 /* LogInViewController.xib */; };
+		EBD5487727AA55B900C216B7 /* ClothDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5487527AA55B900C216B7 /* ClothDetailsViewController.swift */; };
+		EBD5487827AA55B900C216B7 /* ClothDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD5487627AA55B900C216B7 /* ClothDetailsViewController.xib */; };
+		EBD5487E27AA59B100C216B7 /* ClothDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5487C27AA59B100C216B7 /* ClothDetailCollectionViewCell.swift */; };
+		EBD5487F27AA59B100C216B7 /* ClothDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD5487D27AA59B100C216B7 /* ClothDetailCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AC61D2D01FC99FE91E26156 /* Pods-GeetaShopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeetaShopping.debug.xcconfig"; path = "Target Support Files/Pods-GeetaShopping/Pods-GeetaShopping.debug.xcconfig"; sourceTree = "<group>"; };
+		585CCFFE38865342C003BA19 /* Pods_GeetaShopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeetaShopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F7948F88E18D7A2F844EC1 /* Pods-GeetaShopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeetaShopping.release.xcconfig"; path = "Target Support Files/Pods-GeetaShopping/Pods-GeetaShopping.release.xcconfig"; sourceTree = "<group>"; };
+		EB3C2EBA279826930078F35E /* GeetaShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeetaShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3C2EBD279826930078F35E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB3C2EC6279826940078F35E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB3C2EC9279826940078F35E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB3C2ECB279826940078F35E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3C2ED2279826FB0078F35E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EB3C2ED3279826FB0078F35E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EB59285127B02B3C00136B3E /* MyCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartViewController.swift; sourceTree = "<group>"; };
+		EB59285227B02B3C00136B3E /* MyCartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCartViewController.xib; sourceTree = "<group>"; };
+		EB59285627B02E9000136B3E /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		EB59285727B02E9000136B3E /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		EB7AA9C027B0F1E3003DDB7D /* FindProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindProductViewController.swift; sourceTree = "<group>"; };
+		EB7AA9C127B0F1E3003DDB7D /* FindProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindProductViewController.xib; sourceTree = "<group>"; };
+		EB7AA9C527B0F5A9003DDB7D /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB7AA9C627B0F5A9003DDB7D /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		EB7AA9CA27B0F7F1003DDB7D /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		EB7AA9CB27B0F7F1003DDB7D /* FavouriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
+		EB7AA9CE27B0F980003DDB7D /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		EB7AA9CF27B0F980003DDB7D /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
+		EB7AA9E327B10D04003DDB7D /* PlaceOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceOrderViewController.swift; sourceTree = "<group>"; };
+		EB7AA9E427B10D04003DDB7D /* PlaceOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceOrderViewController.xib; sourceTree = "<group>"; };
+		EB7AA9E727B10F4A003DDB7D /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
+		EB7AA9E827B10F4A003DDB7D /* CreditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditViewController.xib; sourceTree = "<group>"; };
+		EB7AA9EB27B12394003DDB7D /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		EB7AA9EC27B12394003DDB7D /* SuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessViewController.xib; sourceTree = "<group>"; };
+		EB7AA9EF27B12C8C003DDB7D /* ErrorScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorScreenViewController.swift; sourceTree = "<group>"; };
+		EB7AA9F027B12C8C003DDB7D /* ErrorScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorScreenViewController.xib; sourceTree = "<group>"; };
+		EB7AAF8727B3E43F00BA0F79 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EB7AAF8827B3E43F00BA0F79 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		EB88680627A50885007A854E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		EB88680727A50885007A854E /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		EB88680A27A51BE8007A854E /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		EB88680B27A51BE8007A854E /* ShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
+		EBA0D0AA27A91F7D003B80BC /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBA0D0AB27A91F7D003B80BC /* ShopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopCollectionViewCell.xib; sourceTree = "<group>"; };
+		EBA0D0AE27A9404F003B80BC /* ClothCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBA0D0AF27A9404F003B80BC /* ClothCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClothCollectionViewCell.xib; sourceTree = "<group>"; };
+		EBCF1F82279856780056ED11 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		EBCF1F83279856780056ED11 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		EBCF1F8627986FCC0056ED11 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		EBCF1F8727986FCC0056ED11 /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		EBD5487527AA55B900C216B7 /* ClothDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothDetailsViewController.swift; sourceTree = "<group>"; };
+		EBD5487627AA55B900C216B7 /* ClothDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClothDetailsViewController.xib; sourceTree = "<group>"; };
+		EBD5487C27AA59B100C216B7 /* ClothDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBD5487D27AA59B100C216B7 /* ClothDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClothDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB3C2EB7279826930078F35E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794515AE26EDDCCCA079061D /* Pods_GeetaShopping.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2725415065DB29DCF3245305 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				585CCFFE38865342C003BA19 /* Pods_GeetaShopping.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		584460E7C9A8BCF24D2A7D3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AC61D2D01FC99FE91E26156 /* Pods-GeetaShopping.debug.xcconfig */,
+				E2F7948F88E18D7A2F844EC1 /* Pods-GeetaShopping.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB2024B427A7EE0C002E7CBA /* LogScreens */ = {
+			isa = PBXGroup;
+			children = (
+				EB3C2ED2279826FB0078F35E /* HomeViewController.swift */,
+				EB3C2ED3279826FB0078F35E /* HomeViewController.xib */,
+				EBCF1F82279856780056ED11 /* IntroViewController.swift */,
+				EBCF1F83279856780056ED11 /* IntroViewController.xib */,
+				EBCF1F8627986FCC0056ED11 /* LogInViewController.swift */,
+				EBCF1F8727986FCC0056ED11 /* LogInViewController.xib */,
+				EB88680627A50885007A854E /* CreateAccountViewController.swift */,
+				EB88680727A50885007A854E /* CreateAccountViewController.xib */,
+			);
+			path = LogScreens;
+			sourceTree = "<group>";
+		};
+		EB2024B627A7EF24002E7CBA /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				EB88680A27A51BE8007A854E /* ShopViewController.swift */,
+				EB88680B27A51BE8007A854E /* ShopViewController.xib */,
+				EBD5487527AA55B900C216B7 /* ClothDetailsViewController.swift */,
+				EBD5487627AA55B900C216B7 /* ClothDetailsViewController.xib */,
+				EB59285127B02B3C00136B3E /* MyCartViewController.swift */,
+				EB59285227B02B3C00136B3E /* MyCartViewController.xib */,
+				EB7AA9C027B0F1E3003DDB7D /* FindProductViewController.swift */,
+				EB7AA9C127B0F1E3003DDB7D /* FindProductViewController.xib */,
+				EB7AA9CA27B0F7F1003DDB7D /* FavouriteViewController.swift */,
+				EB7AA9CB27B0F7F1003DDB7D /* FavouriteViewController.xib */,
+				EB7AA9E327B10D04003DDB7D /* PlaceOrderViewController.swift */,
+				EB7AA9E427B10D04003DDB7D /* PlaceOrderViewController.xib */,
+				EB7AA9E727B10F4A003DDB7D /* CreditViewController.swift */,
+				EB7AA9E827B10F4A003DDB7D /* CreditViewController.xib */,
+				EB7AA9EB27B12394003DDB7D /* SuccessViewController.swift */,
+				EB7AA9EC27B12394003DDB7D /* SuccessViewController.xib */,
+				EB7AA9EF27B12C8C003DDB7D /* ErrorScreenViewController.swift */,
+				EB7AA9F027B12C8C003DDB7D /* ErrorScreenViewController.xib */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		EB3C2EB1279826930078F35E = {
+			isa = PBXGroup;
+			children = (
+				EB3C2EBC279826930078F35E /* GeetaShopping */,
+				EB3C2EBB279826930078F35E /* Products */,
+				584460E7C9A8BCF24D2A7D3E /* Pods */,
+				2725415065DB29DCF3245305 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB3C2EBB279826930078F35E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3C2EBA279826930078F35E /* GeetaShopping.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB3C2EBC279826930078F35E /* GeetaShopping */ = {
+			isa = PBXGroup;
+			children = (
+				EBA0D0A927A91F62003B80BC /* cell */,
+				EB3C2ED1279826AF0078F35E /* controller */,
+				EB3C2EBD279826930078F35E /* AppDelegate.swift */,
+				EB3C2EC6279826940078F35E /* Assets.xcassets */,
+				EB3C2EC8279826940078F35E /* LaunchScreen.storyboard */,
+				EB3C2ECB279826940078F35E /* Info.plist */,
+			);
+			path = GeetaShopping;
+			sourceTree = "<group>";
+		};
+		EB3C2ED1279826AF0078F35E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB7AAF8627B3E42900BA0F79 /* profiles */,
+				EB2024B627A7EF24002E7CBA /* Shop */,
+				EB2024B427A7EE0C002E7CBA /* LogScreens */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EB59285527B02E7900136B3E /* cartTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				EB59285627B02E9000136B3E /* CartTableViewCell.swift */,
+				EB59285727B02E9000136B3E /* CartTableViewCell.xib */,
+			);
+			path = cartTableCell;
+			sourceTree = "<group>";
+		};
+		EB7AA9BF27B0F1C1003DDB7D /* shop */ = {
+			isa = PBXGroup;
+			children = (
+				EBA0D0AA27A91F7D003B80BC /* ShopCollectionViewCell.swift */,
+				EBA0D0AB27A91F7D003B80BC /* ShopCollectionViewCell.xib */,
+				EBA0D0AE27A9404F003B80BC /* ClothCollectionViewCell.swift */,
+				EBA0D0AF27A9404F003B80BC /* ClothCollectionViewCell.xib */,
+			);
+			path = shop;
+			sourceTree = "<group>";
+		};
+		EB7AA9C427B0F590003DDB7D /* findProduct */ = {
+			isa = PBXGroup;
+			children = (
+				EB7AA9C527B0F5A9003DDB7D /* SearchCollectionViewCell.swift */,
+				EB7AA9C627B0F5A9003DDB7D /* SearchCollectionViewCell.xib */,
+			);
+			path = findProduct;
+			sourceTree = "<group>";
+		};
+		EB7AA9C927B0F7D4003DDB7D /* favourite */ = {
+			isa = PBXGroup;
+			children = (
+				EB7AA9CE27B0F980003DDB7D /* FavouriteTableViewCell.swift */,
+				EB7AA9CF27B0F980003DDB7D /* FavouriteTableViewCell.xib */,
+			);
+			path = favourite;
+			sourceTree = "<group>";
+		};
+		EB7AAF8627B3E42900BA0F79 /* profiles */ = {
+			isa = PBXGroup;
+			children = (
+				EB7AAF8727B3E43F00BA0F79 /* ProfileViewController.swift */,
+				EB7AAF8827B3E43F00BA0F79 /* ProfileViewController.xib */,
+			);
+			path = profiles;
+			sourceTree = "<group>";
+		};
+		EBA0D0A927A91F62003B80BC /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB7AA9C927B0F7D4003DDB7D /* favourite */,
+				EB7AA9C427B0F590003DDB7D /* findProduct */,
+				EB7AA9BF27B0F1C1003DDB7D /* shop */,
+				EB59285527B02E7900136B3E /* cartTableCell */,
+				EBD5487927AA598300C216B7 /* clothDetail */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		EBD5487927AA598300C216B7 /* clothDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EBD5487C27AA59B100C216B7 /* ClothDetailCollectionViewCell.swift */,
+				EBD5487D27AA59B100C216B7 /* ClothDetailCollectionViewCell.xib */,
+			);
+			path = clothDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB3C2EB9279826930078F35E /* GeetaShopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3C2ECE279826940078F35E /* Build configuration list for PBXNativeTarget "GeetaShopping" */;
+			buildPhases = (
+				18512E6DA1BD5D88E2C76AB6 /* [CP] Check Pods Manifest.lock */,
+				EB3C2EB6279826930078F35E /* Sources */,
+				EB3C2EB7279826930078F35E /* Frameworks */,
+				EB3C2EB8279826930078F35E /* Resources */,
+				11B605699EC19C744BE84A98 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeetaShopping;
+			productName = GeetaShopping;
+			productReference = EB3C2EBA279826930078F35E /* GeetaShopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB3C2EB2279826930078F35E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EB3C2EB9279826930078F35E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EB3C2EB5279826930078F35E /* Build configuration list for PBXProject "GeetaShopping" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB3C2EB1279826930078F35E;
+			productRefGroup = EB3C2EBB279826930078F35E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB3C2EB9279826930078F35E /* GeetaShopping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB3C2EB8279826930078F35E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7AA9F227B12C8C003DDB7D /* ErrorScreenViewController.xib in Resources */,
+				EB7AA9CD27B0F7F1003DDB7D /* FavouriteViewController.xib in Resources */,
+				EB3C2ECA279826940078F35E /* LaunchScreen.storyboard in Resources */,
+				EB7AA9EE27B12394003DDB7D /* SuccessViewController.xib in Resources */,
+				EB7AA9EA27B10F4A003DDB7D /* CreditViewController.xib in Resources */,
+				EB3C2EC7279826940078F35E /* Assets.xcassets in Resources */,
+				EBD5487F27AA59B100C216B7 /* ClothDetailCollectionViewCell.xib in Resources */,
+				EB88680927A50885007A854E /* CreateAccountViewController.xib in Resources */,
+				EB3C2ED5279826FB0078F35E /* HomeViewController.xib in Resources */,
+				EBD5487827AA55B900C216B7 /* ClothDetailsViewController.xib in Resources */,
+				EBA0D0B127A94050003B80BC /* ClothCollectionViewCell.xib in Resources */,
+				EBA0D0AD27A91F7D003B80BC /* ShopCollectionViewCell.xib in Resources */,
+				EB7AA9E627B10D04003DDB7D /* PlaceOrderViewController.xib in Resources */,
+				EB59285927B02E9000136B3E /* CartTableViewCell.xib in Resources */,
+				EB59285427B02B3C00136B3E /* MyCartViewController.xib in Resources */,
+				EB88680D27A51BE8007A854E /* ShopViewController.xib in Resources */,
+				EB7AAF8A27B3E43F00BA0F79 /* ProfileViewController.xib in Resources */,
+				EB7AA9D127B0F980003DDB7D /* FavouriteTableViewCell.xib in Resources */,
+				EB7AA9C327B0F1E3003DDB7D /* FindProductViewController.xib in Resources */,
+				EB7AA9C827B0F5A9003DDB7D /* SearchCollectionViewCell.xib in Resources */,
+				EBCF1F85279856780056ED11 /* IntroViewController.xib in Resources */,
+				EBCF1F8927986FCC0056ED11 /* LogInViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11B605699EC19C744BE84A98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeetaShopping/Pods-GeetaShopping-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeetaShopping/Pods-GeetaShopping-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeetaShopping/Pods-GeetaShopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18512E6DA1BD5D88E2C76AB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeetaShopping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB3C2EB6279826930078F35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD5487727AA55B900C216B7 /* ClothDetailsViewController.swift in Sources */,
+				EB88680827A50885007A854E /* CreateAccountViewController.swift in Sources */,
+				EBD5487E27AA59B100C216B7 /* ClothDetailCollectionViewCell.swift in Sources */,
+				EB59285827B02E9000136B3E /* CartTableViewCell.swift in Sources */,
+				EBA0D0B027A9404F003B80BC /* ClothCollectionViewCell.swift in Sources */,
+				EB7AA9E527B10D04003DDB7D /* PlaceOrderViewController.swift in Sources */,
+				EBCF1F8827986FCC0056ED11 /* LogInViewController.swift in Sources */,
+				EB7AA9F127B12C8C003DDB7D /* ErrorScreenViewController.swift in Sources */,
+				EB7AA9E927B10F4A003DDB7D /* CreditViewController.swift in Sources */,
+				EB7AA9C227B0F1E3003DDB7D /* FindProductViewController.swift in Sources */,
+				EBA0D0AC27A91F7D003B80BC /* ShopCollectionViewCell.swift in Sources */,
+				EB88680C27A51BE8007A854E /* ShopViewController.swift in Sources */,
+				EBCF1F84279856780056ED11 /* IntroViewController.swift in Sources */,
+				EB3C2EBE279826930078F35E /* AppDelegate.swift in Sources */,
+				EB59285327B02B3C00136B3E /* MyCartViewController.swift in Sources */,
+				EB7AA9ED27B12394003DDB7D /* SuccessViewController.swift in Sources */,
+				EB7AA9C727B0F5A9003DDB7D /* SearchCollectionViewCell.swift in Sources */,
+				EB7AA9CC27B0F7F1003DDB7D /* FavouriteViewController.swift in Sources */,
+				EB7AAF8927B3E43F00BA0F79 /* ProfileViewController.swift in Sources */,
+				EB3C2ED4279826FB0078F35E /* HomeViewController.swift in Sources */,
+				EB7AA9D027B0F980003DDB7D /* FavouriteTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB3C2EC8279826940078F35E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3C2EC9279826940078F35E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB3C2ECC279826940078F35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB3C2ECD279826940078F35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB3C2ECF279826940078F35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC61D2D01FC99FE91E26156 /* Pods-GeetaShopping.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UA3WZ2M26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeetaShopping/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uz.GeetaShopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EB3C2ED0279826940078F35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F7948F88E18D7A2F844EC1 /* Pods-GeetaShopping.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UA3WZ2M26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GeetaShopping/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uz.GeetaShopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB3C2EB5279826930078F35E /* Build configuration list for PBXProject "GeetaShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3C2ECC279826940078F35E /* Debug */,
+				EB3C2ECD279826940078F35E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3C2ECE279826940078F35E /* Build configuration list for PBXNativeTarget "GeetaShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3C2ECF279826940078F35E /* Debug */,
+				EB3C2ED0279826940078F35E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB3C2EB2279826930078F35E /* Project object */;
+}
